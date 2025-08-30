@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  vllm:
+    build: .
+    image: vllm:local
+    runtime: nvidia
+    environment:
+      - MODEL_PATH=qwen3-14b-gptq
+      - SERVED_MODEL_NAME=qwen3-14b-gptq
+    volumes:
+      - ./models:/models:ro
+    ports:
+      - "8000:8000"
+    deploy:
+      resources: {}
