@@ -1,4 +1,5 @@
 #!/bin/bash
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export VLLM_ATTENTION_BACKEND=FLASHINFER
 source .venv/bin/activate
 .venv/bin/vllm serve ~/ai/models/qwen3-14b-gptq \
