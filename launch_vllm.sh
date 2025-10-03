@@ -6,9 +6,9 @@ source .venv/bin/activate
   --served-model-name qwen3-14b-gptq \
   --trust-remote-code \
   --dtype auto \
-  --gpu-memory-utilization 0.74 \
-  --max-model-len 8000 \
-  --max-num-batched-tokens 8000 \
+  --gpu-memory-utilization 0.72 \
+  --max-model-len 5500 \
+  --max-num-batched-tokens 5500 \
   --max-num-seqs 1 \
   --port 8000 \
   --enable-auto-tool-choice \
